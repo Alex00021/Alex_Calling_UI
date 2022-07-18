@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+/// 封装 DialButton
 class DialButton extends StatelessWidget {
   const DialButton({
     Key? key,
@@ -14,9 +15,6 @@ class DialButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //全屏宽度和高度
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
     return SizedBox(
       width: 100,
       child: FlatButton(
