@@ -12,7 +12,6 @@ class HomePage extends StatelessWidget {
     return Stack(
       fit: StackFit.expand,
       children: [
-        // Image
         Image.asset(
           "assets/images/back_ground.jpg",
           fit: BoxFit.cover,

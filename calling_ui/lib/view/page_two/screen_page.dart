@@ -13,14 +13,13 @@ class ScreenPage extends StatefulWidget {
 class _ScreenPageState extends State<ScreenPage> {
 
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color.fromRGBO(50, 60, 240, 0.3),
         body: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               Text(
@@ -53,9 +52,8 @@ class _ScreenPageState extends State<ScreenPage> {
                     decoration: BoxDecoration(
                         color: Colors.black12,
                         borderRadius: BorderRadius.circular(100),
-                        boxShadow: [ //阴影
+                        boxShadow: [
                           BoxShadow(
-                            // color:Colors.black54,
                               offset: Offset(2.0,2.0),
                               blurRadius: 4.0
                           )
@@ -85,39 +83,53 @@ class _ScreenPageState extends State<ScreenPage> {
                   child: Column(
                     children: [
                       Wrap(
-                        runSpacing: 20, //交叉轴上子控件之间的间距
+                        runSpacing: 20,
+                        spacing: 10,
+                        textDirection: TextDirection.rtl,
                         direction: Axis.horizontal,
-                        alignment: WrapAlignment.center,
+                        alignment: WrapAlignment.spaceBetween,
                         children: [
                           DialButton(
                             iconSrc: "assets/icons/Icon Mic.svg",
                             text: "Audio",
-                            press: () {},
+                            press: () {
+                              ///TODO
+                            },
                           ),
                           DialButton(
                             iconSrc: "assets/icons/Icon Volume.svg",
                             text: "Microphone",
-                            press: () {},
+                            press: () {
+                              ///TODO
+                            },
                           ),
                           DialButton(
                             iconSrc: "assets/icons/Icon Video.svg",
                             text: "Video",
-                            press: () {},
+                            press: () {
+                              ///TODO
+                            },
                           ),
                           DialButton(
                             iconSrc: "assets/icons/Icon Message.svg",
                             text: "Message",
-                            press: () {},
+                            press: () {
+                              ///TODO
+                            },
                           ),
                           DialButton(
                             iconSrc: "assets/icons/Icon User.svg",
-                            text: "Add contact",
-                            press: () {},
+                            text: "Add  person",
+                            press: () {
+                              ///TODO
+                            },
                           ),
                           DialButton(
                             iconSrc: "assets/icons/Icon Voicemail.svg",
                             text: "Voice mail",
-                            press: () {},
+                            press: () {
+                              ///TODO
+                            },
                           ),
                         ],
                       ),
